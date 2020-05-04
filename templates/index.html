@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>chatrobot</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="/static/css/default.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+	<!--[if IE]>
+		<script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+{#	<div class="jq22-container">#}
+		<!-- <header class="jq22-header">
+			<h1>jQuery和CSS3时尚聊天框界面动画特效 <span>A jQuery plugin for Chat box</span></h1>
+			
+		</header> -->
+		<div class="jq22-content bgcolor-3">
+			<div id="chatbox">
+				<div id="friendslist">
+			    	<div id="topmenu">
+			        	<span class="friends"></span>
+			            <!-- <span class="chats"></span>
+			            <span class="history"></span> -->
+			        </div>
+			        
+			        <div id="friends">
+			        	<div class="friend">
+			            	<img src="/static/img/1_copy111.jpg" />
+			                <p>
+			                	<strong>guotongtong</strong>
+				                <span>mirobadev@gmail.com</span>
+			                </p>
+			                <div class="status available"></div>
+			            </div>
+			            
+			            <div class="friend">
+			            	<img src="/static/img/2_copy.jpg" />
+			                <p>
+			                	<strong>Martin Joseph</strong>
+				                <span>marjoseph@gmail.com</span>
+			                </p>
+			                <div class="status away"></div>
+			            </div>
+			            
+			            <div class="friend">
+			            	<img src="/static/img/3_copy.jpg" />
+			                <p>
+			                	<strong>Tomas Kennedy</strong>
+				                <span>tomaskennedy@gmail.com</span>
+			                </p>
+			                <div class="status inactive"></div>
+			            </div>
+			            
+			            <div class="friend">
+			            	<img src="/static/img/4_copy.jpg" />
+			                <p>
+			                	<strong>Enrique	Sutton</strong>
+				                <span>enriquesutton@gmail.com</span>
+			                </p>
+			                <div class="status inactive"></div>
+			            </div>
+			            
+			            <div class="friend">
+			            	<img src="/static/img/5_copy.jpg" />
+			                <p>
+			                <strong>	Darnell	Strickland</strong>
+				                <span>darnellstrickland@gmail.com</span>
+			                </p>
+			                <div class="status inactive"></div>
+			            </div>
+			            
+			            <!-- <div id="search">
+				            <input type="text" id="searchfield" value="Search contacts..." />
+			            </div> -->
+			            
+			        </div>                
+			        
+			    </div>	
+			    
+			    <div id="chatview" class="p1">    	
+			        <div id="profile">
+
+			            <div id="close">
+			                <div class="cy"></div>
+			                <div class="cx"></div>
+			            </div>
+			            
+			            <p>Miro Badev</p>
+			            <span>miro@badev@gmail.com</span>
+			        </div>
+			        <div id="chat-messages">
+			        	<label>Thursday 02</label>
+			            
+			            <div class="message">
+			            	<img src="/static/img/1_copy111.jpg" />
+			                <div class="bubble">
+			                	在么？
+			                    <div class="corner"></div>
+			                    <span>3 min</span>
+			                </div>
+			            </div>
+			            
+{#			            <div class="message right">#}
+{#			            	<img src="/static/img/2_copy.jpg" />#}
+{#			                <div class="bubble">#}
+{#			                	Can you share a link for the tutorial?#}
+{#			                    <div class="corner"></div>#}
+{#			                    <span>1 min</span>#}
+{#			                </div>#}
+{#			            </div>#}
+			            
+			            <div class="message">
+			            	<img src="/static/img/1_copy111.jpg" />
+			                <div class="bubble">
+			                	还不回我？
+			                    <div class="corner"></div>
+			                    <span>Now</span>
+			                </div>
+			            </div>
+			            
+{#			            <div class="message right">#}
+{#			            	<img src="/static/img/2_copy.jpg" />#}
+{#			                <div class="bubble">#}
+{#			                	Can you share a link for the tutorial?#}
+{#			                    <div class="corner"></div>#}
+{#			                    <span>1 min</span>#}
+{#			                </div>#}
+{#			            </div>#}
+			            
+			            <div class="message" id="me1" >
+			            	<img src="/static/img/1_copy111.jpg" />
+			                <div class="bubble">
+			                	快！说你爱我！
+			                    <div class="corner"></div>
+			                    <span>Now</span>
+			                </div>
+			            </div>
+			            
+			        </div>
+			    	
+			        <div id="sendmessage">
+						<!-- <form action="#" method="get">
+							 <input type="text" name="fname" /><input type="submit" value="Submit" id="abc1" />
+							<!-- <p>Last name: <input type="text" name="lname" /></p> -->
+                        <!--</form>-->
+
+                        <input id="inabc" type="text" style="border: 1px solid #ccc;
+                padding: 7px 0px;
+                border-radius: 3px;
+                padding-left:10px;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+                -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+                -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+                transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s "value="Send message..." />
+                        <botton class="btn" id="abc" style="background: #eb94d0;
+  /* 创建渐变 */
+  background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+  /* 给按钮添加圆角 */
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 8px;
+  text-shadow: 3px 2px 1px #9daef5;
+  -webkit-box-shadow: 6px 5px 24px #666666;
+  -moz-box-shadow: 6px 5px 24px #666666;
+  box-shadow: 6px 5px 24px #666666;
+  font-family: Arial;
+  color: #fafafa;
+  font-size: 17px;
+  margin-left: 15px;
+  padding: 5px;
+  text-decoration: none;" >Send</botton>
+			        	<!-- <input type="text" value="Send message..." />
+			            <button id="send"></button> -->
+			        </div>
+			    
+			    </div>        
+			</div>	
+		</div>
+		
+{#	</div>#}
+	
+	<script src="http://www.jq22.com/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+
+	$(document).ready(function () {
+	    var preloadbg = document.createElement('img');
+	    preloadbg.src = '/static/img/timeline1.png';
+
+	    $('#abc').click(function () {
+	        var mymes = $('#inabc').val();
+	        var tr;
+            tr ='<div class="message right"> <img src="/static/img/2_copy.jpg" /> <div class="bubble">'
+                + mymes+
+                '<div class="corner"></div> <span>Now</span> </div> </div>';
+            $("#chat-messages").append(tr)
+
+            var robmes = $(function(){
+                 $.ajax({
+                     url:'http://3h11x72382.51vip.biz/json',
+                     type:'post',
+                     dataType:'json',
+                     data:{my:mymes},
+                     success:function(data){
+                      //方法中传入的参数data为后台获取的数据
+                        for(i in data) //data.data指的是数组，数组里是8个对象，i为数组的索引
+                        {
+                            var tr;
+                            tr ='<div class="message" id="'+data[i]+'"> <img src="/static/img/1_copy111.jpg" /> <div class="bubble">'
+			                	+ data[i]+
+			                    '<div class="corner"></div> <span>Now</span> </div> </div>';
+                            $("#chat-messages").append(tr)
+                        }
+
+                     }
+                 })
+                 setTimeout(robmes,100)
+                 setTimeout(function () {
+                      var  s=$("#chat-messages>div:last").attr("id");
+                         location.href="#"+s;
+                 },2000)
+
+             })
+	    });
+
+	    $('#searchfield').focus(function () {
+	        if ($(this).val() == 'Search contacts...') {
+	            $(this).val('');
+	        }
+	    });
+	    $('#searchfield').focusout(function () {
+	        if ($(this).val() == '') {
+	            $(this).val('Search contacts...');
+	        }
+	    });
+	    $('#sendmessage input').focus(function () {
+	        if ($(this).val() == 'Send message...') {
+	            $(this).val('');
+	        }
+	    });
+	    $('#sendmessage input').focusout(function () {
+	        if ($(this).val() == '') {
+	            $(this).val('Send message...');
+	        }
+	    });
+	    $('.friend').each(function () {
+	        $(this).click(function () {
+	            var childOffset = $(this).offset();
+	            var parentOffset = $(this).parent().parent().offset();
+	            var childTop = childOffset.top - parentOffset.top;
+	            var clone = $(this).find('img').eq(0).clone();
+	            var top = childTop + 12 + 'px';
+	            $(clone).css({ 'top': top }).addClass('floatingImg').appendTo('#chatbox');
+	            setTimeout(function () {
+	                $('#profile p').addClass('animate');
+	                $('#profile').addClass('animate');
+	            }, 100);
+	            setTimeout(function () {
+	                $('#chat-messages').addClass('animate');
+	                $('.cx, .cy').addClass('s1');
+	                setTimeout(function () {
+	                    $('.cx, .cy').addClass('s2');
+	                }, 100);
+	                setTimeout(function () {
+	                    $('.cx, .cy').addClass('s3');
+	                }, 200);
+	            }, 150);
+	            $('.floatingImg').animate({
+	                'width': '68px',
+	                'left': '108px',
+	                'top': '20px'
+	            }, 200);
+	            var name = $(this).find('p strong').html();
+	            var email = $(this).find('p span').html();
+	            $('#profile p').html(name);
+	            $('#profile span').html(email);
+	            $('.message').not('.right').find('img').attr('src', $(clone).attr('src'));
+	            $('#friendslist').fadeOut();
+	            $('#chatview').fadeIn();
+	            $('#close').unbind('click').click(function () {
+	                $('#chat-messages, #profile, #profile p').removeClass('animate');
+	                $('.cx, .cy').removeClass('s1 s2 s3');
+	                $('.floatingImg').animate({
+	                    'width': '40px',
+	                    'top': top,
+	                    'left': '12px'
+	                }, 200, function () {
+	                    $('.floatingImg').remove();
+	                });
+	                setTimeout(function () {
+	                    $('#chatview').fadeOut();
+	                    $('#friendslist').fadeIn();
+	                }, 50);
+	            });
+	        });
+	    });
+	    
+	});
+	</script>
+</body>
+</html>
